@@ -90,33 +90,41 @@
     <br />
 
     <script>
-      function drawStars(star) {
+          function drawStars(star) {
         // TODO: drawStars() 함수 내부 코드를 채워주세요.
-
-       
-       star = Number(star)
-
-       for (i=0; i<star; i++){
-
-        star
-       }
-
-
+        for (let i = 0; i < star; i++) {
+          console.log('*'.repeat(star - i));
+        }
       }
 
-      function drawStars2() {
+      function drawStars2(star) {
         // TODO: drawStars2() 함수 내부 코드를 채워주세요.
+        for (let i = 1; i <= star; i++) {
+          console.log(" ".repeat(star - i) + '*'.repeat(i));
+        }
       }
 
-      function drawStars3() {
+      function drawStars3(star) {
+        for (let i = 1; i <= star; i++) {
+          console.log(" ".repeat(star-i) + '*'.repeat(i * 2 - 1));
+        }
         // TODO: drawStars3() 함수 내부 코드를 채워주세요.
       }
 
-      function drawStars4() {
+      function drawStars4(star) {
+        for (let i = 1; i <= star; i++) {
+          console.log(" ".repeat(star-i) + '*'.repeat(i * 2 - 1));
+        }
+        for (let j = lines - 1; j >= 1; j--) {
+          console.log(" ".repeat(star - j) + '*'.repeat(j * 2 - 1));
+        }
         // TODO: drawStars4() 함수 내부 코드를 채워주세요.
       }
 
-      function drawStars5() {
+      function drawStars5(star) {
+        for (let i = 1; i <= star; i++) {
+          console.log(" ".repeat(star - i) + '*'.repeat(star));
+        }
         // TODO: drawStars5() 함수 내부 코드를 채워주세요.
       }
 
@@ -124,17 +132,17 @@
        drawStars(3);
        drawStars(5);
 
-      // drawStars2(3);
-      // drawStars2(5);
+       drawStars2(3);
+       drawStars2(5);
 
-      // drawStars3(3);
-      // drawStars3(5);
+       drawStars3(3);
+       drawStars3(5);
 
-      // drawStars4(3);
-      // drawStars4(5);
+       drawStars4(3);
+       drawStars4(5);
 
-      // drawStars5(3);
-      // drawStars5(5);
+       drawStars5(3);
+       drawStars5(5);
     </script>
   </body>
 </html>
